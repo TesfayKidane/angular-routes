@@ -1,0 +1,14 @@
+<div class="container">
+     <div class="row">
+       <div class="col-lg-6 col-lg-offset-3">
+         <p>List of All Students</p>
+         <div>
+           <ul>
+             <li *ngFor="let student of students">
+               <a href="/profile/{{student.id}}">{{student.name}}</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+</div>
